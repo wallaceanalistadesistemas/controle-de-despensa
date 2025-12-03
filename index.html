@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Controle de Estoque</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Controle da Despensa TI</h1>
+
+    <section class="estoque">
+        <h2>Estoque Atual</h2>
+        <table id="tabelaEstoque">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <section class="movimento">
+        <h2>Registrar Movimento</h2>
+
+        <label>Produto:</label>
+        <select id="produtoSelect"></select>
+
+        <label>Tipo:</label>
+        <select id="tipoMovimento">
+            <option value="entrada">Entrada</option>
+            <option value="saida">Saída</option>
+        </select>
+
+        <label>Quantidade:</label>
+        <input type="number" id="quantidade" min="1">
+
+        <button onclick="registrarMovimento()">Registrar</button>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
